@@ -11,17 +11,10 @@ ReactDOM.render(
 var MyComponent = React.createClass({
     render: function(){
         return (
-            <h1>Hello, world2!</h1>
+            <h1>Hello, {this.props.name}!</h1>
         );
     }
 });
 
-ReactDOM.render(
-    <MyComponent/>,
-    document.getElementById('my-div')
-);
-/*
- ReactDOM.render(
-        <h1>Hello, world!</h1>,
-        document.getElementById('my-div')
-    );*/
+ReactDOM.render(<MyComponent name="Handsome" />, document.getElementById('my-div'));
+
