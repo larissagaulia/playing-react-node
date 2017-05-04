@@ -1,10 +1,1 @@
-# playing-react-node
-Learning react and node
-
-`npm install -g create-react-app`
-
-`create-react-app my-app`
-
-`cd my-app`
-
-`npm start`
+# This is a collection of lots of little projects with node/express/mongoDB/React and maybe other fun stuff
