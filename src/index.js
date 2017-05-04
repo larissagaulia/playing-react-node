@@ -8,13 +8,21 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+
 var MyComponent = React.createClass({
+    getInitialState: function(){
+        return {
+            count: 5
+        }
+    },
     render: function(){
         return (
-            <h1>Hello, {this.props.name}!</h1>
-        );
+            <h1>{this.state.count}</h1>
+        )
     }
 });
-
-ReactDOM.render(<MyComponent name="Handsome" />, document.getElementById('my-div'));
+ReactDOM.render(
+    <MyComponent/>,
+    document.getElementById('my-div')
+);
 
